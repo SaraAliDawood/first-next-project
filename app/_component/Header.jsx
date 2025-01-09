@@ -10,7 +10,7 @@ import CartApis from '../_Utils/CartApis';
 
 
 function Header()  {
-  console.log("href",window.location.href);
+  // console.log("href",window.location.href);
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const {cart , setCart} = useContext(CartContext);
   useEffect(() => {

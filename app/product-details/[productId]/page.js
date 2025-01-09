@@ -28,7 +28,7 @@ function ProductDetails({ params }) {
       // Fetch the product using the frontend filtering logic
       const product = await ProductApis.getProductById(productId);
       setProduct(product); // Set the found product to state
-      console.log(product,"product");
+      // console.log(product,"product");
       getProductListByCategory(product);
       
     } catch (err) {
@@ -42,7 +42,7 @@ function ProductDetails({ params }) {
    
  }
  const path = usePathname();
-   console.log(path);
+  //  console.log(path);
   return (
     <div className='px-10 py-8 md:px-28' >
       <Breadcrumb path={path} />

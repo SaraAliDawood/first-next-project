@@ -18,7 +18,7 @@ const getProductById = async (id) => {
 
     return product;
   } catch (error) {
-    console.error('Error fetching product by ID:', error.message);
+    // console.error('Error fetching product by ID:', error.message);
     throw error;
   }
 };
