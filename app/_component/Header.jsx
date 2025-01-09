@@ -20,7 +20,7 @@ function Header()  {
   const  {user} = useUser();
   useEffect(() => {
   user && getCartItems();
-  },[user]);
+  },[user , getCartItems]);
   const getCartItems = ()=>CartApis.getUserCartItems(user?.primaryEmailAddress.emailAddress)
   .then(res=>{console.log(res.data.data)
     setCart(res.data.data)

@@ -26,8 +26,8 @@ function ProductItem({ product }) {
        <div className='p-4 '>
         
        <h1 className='text-lg font-extrabold'>{product?.title}</h1>
-       <p className='font-semibold'>Category: <span className='text-primary'>"{product?.category}" </span></p>
-       <p className='font-semibold'>Price: <span className='text-primary'>  "{product?.price}$"</span></p>
+       <p className='font-semibold'>Category: <span className='text-primary'>{product?.category} </span></p>
+       <p className='font-semibold'>Price: <span className='text-primary'>  {product?.price}$</span></p>
        <p><span className='font-semibold'>Description: </span>  {product?.description[0]?.children[0]?.text}</p>
        </div>
         

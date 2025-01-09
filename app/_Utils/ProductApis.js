@@ -23,8 +23,11 @@ const getProductById = async (id) => {
   }
 };
 
-export default {
+
+const ProductApis = {
   getLatestProducts,
   getProductById,
   getProductsByCategory,
 };
+
+export default ProductApis; 

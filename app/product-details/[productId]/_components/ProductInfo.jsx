@@ -37,8 +37,8 @@ const {cart, setCart} = useContext(CartContext);
     <div className='p-4 '>
            
           <h1 className='text-lg pb-2 font-extrabold'>{product?.title}</h1>
-          <p className='font-semibold pb-2'>Category: <span className='text-primary'>"{product?.category}" </span></p>
-          <p className='font-semibold pb-2'>Price: <span className='text-primary'>  "{product?.price}$"</span></p>
+          <p className='font-semibold pb-2'>Category: <span className='text-primary'>{product?.category} </span></p>
+          <p className='font-semibold pb-2'>Price: <span className='text-primary'>  {product?.price}$</span></p>
           <p><span className='font-semibold pb-2'>Description: </span>  {product?.description[0]?.children[0]?.text}</p>
          
          <button onClick={()=>handleAddToCart()} className=' p-3 mt-4 text-white bg-primary rounded-md hover:bg-primary/75 flex items-center gap-2 '> Add to cart <ShoppingCart /> </button>

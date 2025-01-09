@@ -21,7 +21,7 @@ function ProductDetails({ params }) {
     if (unwrappedParams?.productId) { 
       fetchProduct(Number(unwrappedParams.productId)); // Ensure productId is a number
     }
-  }, [unwrappedParams?.productId]);
+  }, [unwrappedParams?.productId , fetchProduct]);
 
   const fetchProduct = async (productId) => {
     try {
